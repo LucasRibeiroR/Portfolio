@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfólio</title>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="https://lucasribeiror.github.io/Portfolio/" id="logo">
+          <img src="imagens/logoimg.png" alt="logo Lucas Ribeiro" width="120px">
+        </a>
+      </div>
+  
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="#home" class="active nav-link" >Home</a></li>
+          <li class="nav-item"><a href="#aboutme" class="nav-link" >Sobre mim</a></li>
+          <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link" >Contato</a></li>
+          
+        </ul>
+      </div>
+  
+  
+      <div class="dark-mode">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+  
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon-mobile" src="imagens/menu_white_36dp.svg"></button>
+      </div>
+    </nav>
+  
+    <div class="mobile-menu">
+      <button class="close-icon" onclick="menuShow()"><img class="icon-mobile" src="imagens/close_white_36dp.svg"></button>
+      <ul>
+        <li class="nav-item"><a href="#home" class="active nav-link">Home</a></li>
+        <li class="nav-item"><a href="#aboutme" class="nav-link">Sobre mim</a></li>
+        <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+  
+      <div class="dark-mode">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    </div>
+  </header>
+  
+
+
+    <main>
+        <section id="home" class="home">
+            <div class="container">
+                <span class="text fit-text">Olá, eu me chamo</span>
+                <span class="text first-text">Lucas Ribeiro</span>
+                <h3 class="text fit-text bottom" >E sou um <span class="text sec-text">Web Desenvolvedor</span></h3>
+                <a href="./CvLucasRib.pdf" class="morebtn" download><b>Download Currículo</b></a>
+            </div>
+            <div class="image-container">
+                <img src="imagens/homeimg.png" class="home-img" width="400" alt="imagem desenvolvedor">
+            </div>
+        </section>
+
+        <section id="aboutme" class="about-me">
+            <div class="container2">    
+                <img src="imagens/aboutmeimg.png" alt="Imagem Sobre mim" width="400px" class="about-me-img">
+            </div>
+            <div class="container2">
+                <h1 class="h1">Sobre mim</h1>
+                <p class="p">Olá! Sou Lucas Ribeiro, tenho 19 anos e sou um desenvolvedor entusiasmado em aprender e crescer na área de desenvolvimento web. 
+                    Além disso, estou cursando Análise e Desenvolvimento de Sistemas, o que me proporciona uma base sólida para criar soluções 
+                    eficientes e intuitivas.
+                    Também tenho um nível intermediário de inglês, o que me permite colaborar em equipes internacionais.
+                    
+                    Estou animado para compartilhar meu portfólio com você e explorar oportunidades de trabalho em projetos desafiadores. Vamos
+                     criar algo incrível juntos!</p>
+            </div>
+        </section>
+
+
+
+        <section id="projetos">
+          <h1 class="h1-projetos">Projetos</h1>
+          <div class="swiper mySwiper container-projetos">
+            <div class="swiper-wrapper content-projetos">
+                
+                <div class="swiper-slide card">  
+                  <div class="card-content">
+                    <div class="image-projetos">
+                      <a href="https://lucasribeiror.github.io/Calculadora/" target="_blank" class="projeto-img"><img src="./imagens/project-1.png"></a>
+                    </div>
+          
+                    <div class="nome-projeto">
+                      <span class="nome">Calculadora</span>
+                      <span class="projeto">Resolva cálculos matemáticos em segundos.</span>
+                    </div>
+          
+                    <div class="mediaicons">
+                      <a href="https://github.com/LucasRibeiroR/Calculadora" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://lucasribeiror.github.io/Calculadora/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">  
+                  <div class="card-content">
+                    <div class="image-projetos">
+                      <a href="#" class="projeto-img"><img src="./imagens/project-2.png"></a>
+                    </div>
+          
+                    <div class="nome-projeto">
+                      <span class="nome">Projeto 2</span>
+                      <span class="projeto">Descrição do projeto</span>
+                    </div>
+          
+                    <div class="mediaicons">
+                      <a href="https://github.com/LucasRibeiroR" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="#" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">  
+                  <div class="card-content">
+                    <div class="image-projetos">
+                      <a href="#" class="projeto-img"><img src="./imagens/project-3.png"></a>
+                    </div>
+          
+                    <div class="nome-projeto">
+                      <span class="nome">Projeto 3</span>
+                      <span class="projeto">Descrição do projeto</span>
+                    </div>
+          
+                    <div class="mediaicons">
+                      <a href="https://github.com/LucasRibeiroR" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="#" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">  
+                  <div class="card-content">
+                    <div class="image-projetos">
+                      <a href="#" class="projeto-img"><img src="./imagens/project-1.png"></a>
+                    </div>
+          
+                    <div class="nome-projeto">
+                      <span class="nome">projeto 4</span>
+                      <span class="projeto">Descrição do projeto</span>
+                    </div>
+          
+                    <div class="mediaicons">
+                      <a href="https://github.com/LucasRibeiroR" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="#" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">  
+                  <div class="card-content">
+                    <div class="image-projetos">
+                      <a href="#" class="projeto-img"><img src="./imagens/project-2.png"></a>
+                    </div>
+          
+                    <div class="nome-projeto">
+                      <span class="nome">Projeto 5</span>
+                      <span class="projeto">Descrição do projeto</span>
+                    </div>
+          
+                    <div class="mediaicons">
+                      <a href="https://github.com/LucasRibeiroR" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="#" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">  
+                  <div class="card-content">
+                    <div class="image-projetos">
+                      <a href="#" class="projeto-img"><img src="./imagens/project-3.png"></a>
+                    </div>
+          
+                    <div class="nome-projeto">
+                      <span class="nome">Projeto 6</span>
+                      <span class="projeto">Descrição do projeto</span>
+                    </div>
+          
+                    <div class="mediaicons">
+                      <a href="https://github.com/LucasRibeiroR" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="#" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>  
+            
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+
+            
+            
+          </div>
+
+
+          </section>
+          
+
+    
+       
+          
+          
+
+        <section id="contato" class="contato">
+            <div class="container3">
+              <h1 class="title">Contato</h1>
+              <div class="icon">
+                <ul>
+                  <li><a href="https://github.com/LucasRibeiroR" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/lucas-ribeiro-8ab180226" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="https://wa.me/5521990243928?text=Olá Lucas, vi seu portfólio e gostaria de falar com você!" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+              </div>
+              <div class="email-div">
+                <h3 class="title2">Fale comigo</h3>
+                <form class="form" method="POST" action="./email.php">
+                    <input class="field" name="name" placeholder="Seu nome" autocomplete="off" required>
+                    <input class="field" name="email" placeholder="Seu E-mail" autocomplete="off" required>
+                    <textarea class="field" name="message" placeholder="Digite sua mensagem aqui." autocomplete="off" required  ></textarea>
+                    <input type="submit" class="send-email" value="Enviar">
+                </form>
+              </div>
+            </div>
+          </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&#169; 2023 Desenvolvido por Lucas Ribeiro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
